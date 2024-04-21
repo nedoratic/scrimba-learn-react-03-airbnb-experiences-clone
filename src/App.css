@@ -1,0 +1,26 @@
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Body */
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1.6rem 5rem;
+	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+	height: 2rem;
+}
