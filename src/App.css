@@ -50,3 +50,40 @@ body {
 .hero__description {
 	font-weight: 300;
 }
+
+/* Cards */
+
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 5rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
+}
+
+.card__image {
+	border-radius: 0.5rem;
+	width: 100%;
+}
+
+.card__stats {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+.gray {
+	color: #918e9b;
+}
+
+.bold {
+	font-weight: 600;
+}
