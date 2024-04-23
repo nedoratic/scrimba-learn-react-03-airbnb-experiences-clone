@@ -1,8 +1,16 @@
 import star from '../assets/star.svg';
 
 const Card = (props) => {
+	let badgeText;
+	if (props.openSpots === 0) {
+		badgeText = 'SOLD OUT';
+	} else if (props.location === 'Online') {
+		badgeText = 'ONLINE';
+	}
+
 	return (
 		<div className='card'>
+			{badgeText && <div className='card__badge'>{badgeText}</div>}
 			<img className='card__image' src={`public/images/${props.img}`} alt='Card image.' />
 			<div className='card__stats'>
 				<img className='card__stats__rating-star-icon' src={star} alt='Rating star icon.' />

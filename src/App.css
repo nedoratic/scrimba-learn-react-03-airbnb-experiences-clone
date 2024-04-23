@@ -66,10 +66,26 @@ body {
 	margin-bottom: 3rem;
 }
 
+/* Card */
 .card {
-	flex: 0 0 auto; /* Prevent cards from growing */
-	display: inline-block; /* Display cards inline */
-	vertical-align: top; /* Align cards to the top */
+	position: relative; /* Make the card container relative */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
+}
+
+/* Card Badge */
+.card__badge {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 0.8rem;
+	font-weight: 500;
+	padding: 0.3rem 0.8rem;
+	border-radius: 2rem;
 }
 
 .card__image {
