@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	/* border: 1px solid red; */
 }
 
 /* Body */
@@ -34,12 +35,16 @@ body {
 	padding: 5rem;
 }
 
+.hero__logo {
+	margin-bottom: 5rem;
+}
+
 .hero__content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	padding: 5rem 0;
+	/* padding: 5rem 0; */
 }
 
 .hero__title {
@@ -58,7 +63,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
-	padding: 5rem;
+	margin-bottom: 53rem;
 }
 
 .card {
