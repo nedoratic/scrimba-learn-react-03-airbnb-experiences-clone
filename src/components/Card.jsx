@@ -1,26 +1,25 @@
 import star from '../assets/star.svg';
-import test from '../images/card-img-1.svg';
 
-const Card = () => {
+const Card = (props) => {
 	return (
 		<div className='card'>
-			<img className='card__image' src={test} alt='Card image.' />
+			<img className='card__image' src={`public/images/${props.img}`} alt='Card image.' />
 			<div className='card__stats'>
 				<img className='card__stats__rating-star-icon' src={star} alt='Rating star icon.' />
-				<div className='card__stats__rating-score'>5.0</div>
+				<div className='card__stats__rating-score'>{props.stats.rating.toFixed(1)}</div>
 				<div className='card__stats__rating-number'>
-					<span className='gray'>(6)</span>
+					<span className='gray'>({props.stats.reviewCount})</span>
 				</div>
 				<div className='card__stats__separator'>
 					<span className='gray'>•</span>
 				</div>
 				<div className='card__stats__location'>
-					<span className='gray'>USA</span>
+					<span className='gray'>{props.location}</span>
 				</div>
 			</div>
-			<div className='card__title'>Life lessons with Katie Zaferes</div>
+			<div className='card__title'>{props.title}</div>
 			<div className='card__pricing'>
-				<span className='bold'>From $136</span> / person
+				<span className='bold'>From ${props.price}</span> / person
 			</div>
 		</div>
 	);

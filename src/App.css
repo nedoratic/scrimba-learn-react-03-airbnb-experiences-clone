@@ -33,6 +33,7 @@ body {
 	justify-content: center;
 	align-self: center;
 	padding: 5rem;
+	padding-bottom: 3rem;
 }
 
 .hero__logo {
@@ -44,7 +45,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	/* padding: 5rem 0; */
 }
 
 .hero__title {
@@ -60,10 +60,11 @@ body {
 
 .cards {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	gap: 2rem;
-	margin-bottom: 53rem;
+	margin: 0 5rem;
+	margin-bottom: 3rem;
 }
 
 .card {
@@ -75,7 +76,7 @@ body {
 
 .card__image {
 	border-radius: 0.5rem;
-	width: 100%;
+	width: 15rem;
 	padding-bottom: 0.5rem;
 }
 

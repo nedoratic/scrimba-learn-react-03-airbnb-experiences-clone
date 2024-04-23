@@ -5,15 +5,15 @@ import './App.css';
 import data from './data.jsx';
 
 function App() {
+	const cards = data.map((card) => {
+		return <Card key={card.id} {...card} />;
+	});
+
 	return (
 		<div>
 			<Navbar />
 			<Hero />
-			<div className='cards'>
-				<Card />
-				<Card />
-				<Card />
-			</div>
+			<div className='cards'>{cards}</div>
 		</div>
 	);
 }
